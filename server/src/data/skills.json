@@ -1,0 +1,173 @@
+[
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "difficulty": "Beginner",
+    "prerequisites": [],
+    "concepts": ["Syntax", "OOP", "List Comprehensions", "Lambdas", "Generators"],
+    "description": "Core language for Data Science, ML, and Rapid Scripting."
+  },
+  {
+    "id": "javascript_typescript",
+    "name": "JavaScript & TypeScript",
+    "category": "Language",
+    "difficulty": "Beginner",
+    "prerequisites": [],
+    "concepts": ["ES6+", "Async/Await", "Event Loop", "Type Annotations", "Generics"],
+    "description": "Primary language suite for modern Frontend, Web Development, and Node backend applications."
+  },
+  {
+    "id": "arrays_strings",
+    "name": "Arrays & Strings",
+    "category": "Core DSA",
+    "difficulty": "Beginner",
+    "prerequisites": ["python"],
+    "concepts": ["Array Traversal", "Prefix Sums", "Two Pointers", "Sliding Window"],
+    "description": "Contiguous memory layout, two-pointer techniques, and substring sliding windows."
+  },
+  {
+    "id": "hash_tables",
+    "name": "Hash Tables & Sets",
+    "category": "Core DSA",
+    "difficulty": "Beginner",
+    "prerequisites": ["arrays_strings"],
+    "concepts": ["Hash Maps", "Hash Sets", "Collision Resolution", "O(1) Lookups"],
+    "description": "Constant time lookup, frequency counting, and hash mapping."
+  },
+  {
+    "id": "linked_lists",
+    "name": "Linked Lists",
+    "category": "Core DSA",
+    "difficulty": "Intermediate",
+    "prerequisites": ["arrays_strings"],
+    "concepts": ["Singly Linked List", "Doubly Linked List", "Fast & Slow Pointers", "Reversal"],
+    "description": "Dynamic node-pointer structures, cycle detection, and list manipulation."
+  },
+  {
+    "id": "stacks_queues",
+    "name": "Stacks & Queues",
+    "category": "Core DSA",
+    "difficulty": "Intermediate",
+    "prerequisites": ["linked_lists"],
+    "concepts": ["LIFO", "FIFO", "Monotonic Stack", "Priority Queue", "Deque"],
+    "description": "Auxiliary buffer structures, monotonic trends, and level-order queueing."
+  },
+  {
+    "id": "trees_graphs",
+    "name": "Trees & Graphs",
+    "category": "Core DSA",
+    "difficulty": "Advanced",
+    "prerequisites": ["stacks_queues", "hash_tables"],
+    "concepts": ["Binary Trees", "BST", "DFS Traversal", "BFS Traversal", "Topological Sort", "Dijkstra"],
+    "description": "Hierarchical and network node relationships, traversals, and pathfinding."
+  },
+  {
+    "id": "dynamic_programming",
+    "name": "Dynamic Programming",
+    "category": "Core DSA",
+    "difficulty": "Advanced",
+    "prerequisites": ["arrays_strings", "trees_graphs"],
+    "concepts": ["Memoization", "Tabulation", "0/1 Knapsack", "Longest Common Subsequence", "State Transitions"],
+    "description": "Optimal substructure and overlapping subproblems optimization."
+  },
+  {
+    "id": "sql",
+    "name": "SQL & Relational DBs",
+    "category": "Data Engineering",
+    "difficulty": "Intermediate",
+    "prerequisites": [],
+    "concepts": ["Joins", "Aggregations", "Window Functions", "Indexing", "Query Optimization"],
+    "description": "Declarative relational queries, analytical window calculations, and schema design."
+  },
+  {
+    "id": "database_admin",
+    "name": "Database Administration & Tuning",
+    "category": "Database",
+    "difficulty": "Advanced",
+    "prerequisites": ["sql"],
+    "concepts": ["B-Trees", "WAL Logging", "Replication", "Sharding", "Query Plan Cost Analysis"],
+    "description": "Relational storage engine internals, query execution plan optimization, and HA replication."
+  },
+  {
+    "id": "statistics_prob",
+    "name": "Statistics & Probability",
+    "category": "Data Science",
+    "difficulty": "Intermediate",
+    "prerequisites": [],
+    "concepts": ["Hypothesis Testing", "Bayes Theorem", "Distributions", "p-values", "Regression"],
+    "description": "Statistical modeling, confidence intervals, and probability distributions."
+  },
+  {
+    "id": "machine_learning",
+    "name": "Machine Learning",
+    "category": "Data Science",
+    "difficulty": "Advanced",
+    "prerequisites": ["python", "statistics_prob", "arrays_strings"],
+    "concepts": ["Supervised Learning", "Classification", "Clustering", "Gradient Descent", "Feature Engineering"],
+    "description": "Scikit-Learn, model validation, hyperparameter tuning, and evaluation metrics."
+  },
+  {
+    "id": "deep_learning",
+    "name": "Deep Learning & NLP",
+    "category": "AI",
+    "difficulty": "Advanced",
+    "prerequisites": ["machine_learning", "dynamic_programming"],
+    "concepts": ["Neural Networks", "Transformers", "Backpropagation", "Embeddings", "PyTorch"],
+    "description": "Multi-layer perceptrons, attention mechanisms, and deep representation learning."
+  },
+  {
+    "id": "data_pipelines",
+    "name": "Data Pipelines & Spark",
+    "category": "Data Engineering",
+    "difficulty": "Advanced",
+    "prerequisites": ["python", "sql"],
+    "concepts": ["ETL", "Apache Spark", "Airflow", "Distributed Processing", "Data Warehousing"],
+    "description": "Large-scale batch and streaming data architectures and transformations."
+  },
+  {
+    "id": "react_frontend",
+    "name": "React & Web Frontend UI",
+    "category": "Frontend",
+    "difficulty": "Intermediate",
+    "prerequisites": ["javascript_typescript"],
+    "concepts": ["Virtual DOM", "Component Lifecycle", "Custom Hooks", "State Management", "CSS Grid/Flex"],
+    "description": "Declarative component-driven web application UI design and state architecture."
+  },
+  {
+    "id": "backend_systems",
+    "name": "Backend Systems & REST APIs",
+    "category": "Backend",
+    "difficulty": "Intermediate",
+    "prerequisites": ["javascript_typescript", "sql"],
+    "concepts": ["RESTful APIs", "Express.js", "Authentication/JWT", "Middleware", "Caching/Redis"],
+    "description": "Server-side microservice architecture, routing, middleware pipelines, and API design."
+  },
+  {
+    "id": "devops_cloud",
+    "name": "DevOps, Containers & Cloud",
+    "category": "DevOps",
+    "difficulty": "Advanced",
+    "prerequisites": ["backend_systems"],
+    "concepts": ["Docker Containers", "Kubernetes", "CI/CD Pipelines", "AWS/Cloud", "Infrastructure as Code"],
+    "description": "Automated deployment pipelines, container orchestration, and cloud infrastructure management."
+  },
+  {
+    "id": "cybersecurity",
+    "name": "Cybersecurity & Network Defense",
+    "category": "Security",
+    "difficulty": "Advanced",
+    "prerequisites": ["backend_systems"],
+    "concepts": ["Threat Modeling", "Penetration Testing", "Cryptography", "OWASP Top 10", "Network Protocols"],
+    "description": "System vulnerability assessment, secure socket protocols, and security auditing."
+  },
+  {
+    "id": "git_system_design",
+    "name": "Git & System Architecture",
+    "category": "Software Engineering",
+    "difficulty": "Intermediate",
+    "prerequisites": ["arrays_strings"],
+    "concepts": ["Version Control (Git)", "Distributed Systems", "Load Balancing", "CAP Theorem"],
+    "description": "Scalable software system architecture, Git branching workflows, and design patterns."
+  }
+]

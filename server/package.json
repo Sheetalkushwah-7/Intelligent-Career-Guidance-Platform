@@ -1,0 +1,27 @@
+{
+  "name": "intelligent-career-guidance-server",
+  "version": "1.0.0",
+  "description": "Backend and DSA Algorithm Engine for Intelligent Career Guidance Platform",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "dsa",
+    "career-guidance",
+    "algorithms",
+    "knapsack",
+    "topological-sort"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.24.4"
+  }
+}

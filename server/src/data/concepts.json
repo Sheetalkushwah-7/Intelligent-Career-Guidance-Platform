@@ -1,0 +1,83 @@
+[
+  {
+    "id": "two_pointers",
+    "name": "Two Pointers",
+    "skillId": "arrays_strings",
+    "category": "Technique",
+    "description": "Technique using two index pointers moving towards each other or simultaneously to process sorted arrays or detect intervals in linear time.",
+    "prerequisites": ["arrays_strings"],
+    "commonWeaknessPatterns": ["Off-by-one pointer index", "Infinite loop when pointers fail to increment", "Applying on unsorted data without sorting"]
+  },
+  {
+    "id": "sliding_window",
+    "name": "Sliding Window",
+    "skillId": "arrays_strings",
+    "category": "Technique",
+    "description": "Sub-array/sub-string tracking with dynamic or fixed expansion and contraction bounds.",
+    "prerequisites": ["two_pointers"],
+    "commonWeaknessPatterns": ["Shrinking window condition check off-by-one", "Failing to update state map during window contraction"]
+  },
+  {
+    "id": "hashmap_lookup",
+    "name": "HashMap Lookups & Frequency",
+    "skillId": "hash_tables",
+    "category": "Data Structure",
+    "description": "O(1) average-time dictionary lookup and occurrence counters for eliminating nested inner loops.",
+    "prerequisites": ["arrays_strings"],
+    "commonWeaknessPatterns": ["Using array.includes() instead of Set.has()", "Key collisions / type coercion errors in keys"]
+  },
+  {
+    "id": "binary_search",
+    "name": "Binary Search",
+    "skillId": "arrays_strings",
+    "category": "Algorithm",
+    "description": "Logarithmic search on monotonic condition spaces or sorted collections.",
+    "prerequisites": ["arrays_strings"],
+    "commonWeaknessPatterns": ["Integer overflow on mid calculation", "Infinite loop with left <= right vs left < right"]
+  },
+  {
+    "id": "monotonic_stack",
+    "name": "Monotonic Stack",
+    "skillId": "stacks_queues",
+    "category": "Data Structure",
+    "description": "Stack maintaining elements in strictly ascending or descending order for Next Greater Element problems.",
+    "prerequisites": ["stacks_queues"],
+    "commonWeaknessPatterns": ["Pushing values instead of indices", "Inverted comparison condition in while loop"]
+  },
+  {
+    "id": "bfs_traversal",
+    "name": "Breadth-First Search (Queue)",
+    "skillId": "trees_graphs",
+    "category": "Graph Algorithm",
+    "description": "Level-order traversal computing shortest unweighted path between vertices.",
+    "prerequisites": ["stacks_queues", "hash_tables"],
+    "commonWeaknessPatterns": ["Forgetting to mark node visited upon enqueue (causing infinite cycle)", "Incorrect level size snapshotting"]
+  },
+  {
+    "id": "dfs_traversal",
+    "name": "Depth-First Search (Recursion/Stack)",
+    "skillId": "trees_graphs",
+    "category": "Graph Algorithm",
+    "description": "Deep branch exploration for connectivity, cycle detection, and topological paths.",
+    "prerequisites": ["trees_graphs"],
+    "commonWeaknessPatterns": ["Call stack overflow on deep recursion", "Missing backtrack unmark state in permutations"]
+  },
+  {
+    "id": "topological_sort_concept",
+    "name": "Topological Sort (Kahn's / DAG)",
+    "skillId": "trees_graphs",
+    "category": "Graph Algorithm",
+    "description": "Linear ordering of directed acyclic vertices according to dependency in-degrees.",
+    "prerequisites": ["bfs_traversal"],
+    "commonWeaknessPatterns": ["Not checking remaining in-degrees to detect cycles", "Mutating in-degree map improperly"]
+  },
+  {
+    "id": "dp_memoization",
+    "name": "Dynamic Programming (1D & 2D Memo)",
+    "skillId": "dynamic_programming",
+    "category": "Optimization",
+    "description": "Decomposing problems into overlapping subproblems with state caching to avoid exponential recomputation.",
+    "prerequisites": ["arrays_strings", "trees_graphs"],
+    "commonWeaknessPatterns": ["Missing base cases", "State transition equation index offset", "Inefficient memory allocations"]
+  }
+]

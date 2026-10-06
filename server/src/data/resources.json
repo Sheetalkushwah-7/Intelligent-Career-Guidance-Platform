@@ -1,0 +1,68 @@
+[
+  {
+    "id": "res_neetcode",
+    "title": "NeetCode DSA Roadmap & Visual Explanations",
+    "skillId": "arrays_strings",
+    "url": "https://neetcode.io",
+    "type": "Interactive Guide",
+    "isFree": true,
+    "provider": "NeetCode",
+    "difficulty": "All Levels",
+    "description": "Structured breakdown of patterns: Two Pointers, Sliding Window, Trees, Graphs, and DP."
+  },
+  {
+    "id": "res_mit_algorithms",
+    "title": "MIT 6.006: Introduction to Algorithms",
+    "skillId": "trees_graphs",
+    "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+    "type": "Video Course",
+    "isFree": true,
+    "provider": "MIT OpenCourseWare",
+    "difficulty": "Advanced",
+    "description": "Rigorous algorithmic proofs, DAGs, shortest paths, and dynamic programming memoization."
+  },
+  {
+    "id": "res_sql_bolt",
+    "title": "SQLBolt - Interactive SQL Lessons",
+    "skillId": "sql",
+    "url": "https://sqlbolt.com",
+    "type": "Interactive Tutorial",
+    "isFree": true,
+    "provider": "SQLBolt",
+    "difficulty": "Beginner to Intermediate",
+    "description": "Hands-on browser-based SQL queries covering joins, aggregations, and subqueries."
+  },
+  {
+    "id": "res_stat_quest",
+    "title": "StatQuest with Josh Starmer",
+    "skillId": "statistics_prob",
+    "url": "https://statquest.org",
+    "type": "Visual Videos",
+    "isFree": true,
+    "provider": "StatQuest",
+    "difficulty": "Beginner to Intermediate",
+    "description": "Crystal-clear visual explanations of p-values, Bayes Theorem, ROC curves, and linear regression."
+  },
+  {
+    "id": "res_fast_ai",
+    "title": "Practical Deep Learning for Coders",
+    "skillId": "deep_learning",
+    "url": "https://course.fast.ai",
+    "type": "Course",
+    "isFree": true,
+    "provider": "fast.ai",
+    "difficulty": "Intermediate to Advanced",
+    "description": "Top-down practical deep learning with PyTorch, computer vision, and transformers."
+  },
+  {
+    "id": "res_cp_algorithms",
+    "title": "CP-Algorithms (Competitive Programming Algorithms)",
+    "skillId": "dynamic_programming",
+    "url": "https://cp-algorithms.com",
+    "type": "Documentation & Code",
+    "isFree": true,
+    "provider": "CP-Algorithms",
+    "difficulty": "Advanced",
+    "description": "Exhaustive algorithmic library with C++/Python implementations for DP, Graph Theory, and Combinatorics."
+  }
+]

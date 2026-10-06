@@ -1,0 +1,470 @@
+[
+  {
+    "id": "python_q1",
+    "skillId": "python",
+    "difficulty": "beginner",
+    "prompt": "Which Python collection preserves insertion order and maps unique keys to values?",
+    "options": [
+      { "value": "list", "label": "List" },
+      { "value": "dict", "label": "Dictionary" },
+      { "value": "set", "label": "Set" },
+      { "value": "tuple", "label": "Tuple" }
+    ],
+    "correctAnswer": "dict"
+  },
+  {
+    "id": "python_q2",
+    "skillId": "python",
+    "difficulty": "intermediate",
+    "prompt": "What does the `yield` keyword do in a Python function?",
+    "options": [
+      { "value": "returns_list", "label": "Returns a complete list immediately" },
+      { "value": "makes_generator", "label": "Makes the function a generator that produces values lazily" },
+      { "value": "raises_exception", "label": "Raises a StopIteration exception" },
+      { "value": "creates_thread", "label": "Creates a new thread" }
+    ],
+    "correctAnswer": "makes_generator"
+  },
+  {
+    "id": "python_q3",
+    "skillId": "python",
+    "difficulty": "advanced",
+    "prompt": "In Python, what is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": [
+      { "value": "0_4_16", "label": "[0, 4, 16]" },
+      { "value": "0_1_4_9_16", "label": "[0, 1, 4, 9, 16]" },
+      { "value": "1_9", "label": "[1, 9]" },
+      { "value": "0_2_4", "label": "[0, 2, 4]" }
+    ],
+    "correctAnswer": "0_4_16"
+  },
+  {
+    "id": "arrays_strings_q1",
+    "skillId": "arrays_strings",
+    "difficulty": "beginner",
+    "prompt": "What is the typical time complexity of accessing an array element by index?",
+    "options": [
+      { "value": "constant", "label": "O(1)" },
+      { "value": "linear", "label": "O(n)" },
+      { "value": "logarithmic", "label": "O(log n)" },
+      { "value": "quadratic", "label": "O(n²)" }
+    ],
+    "correctAnswer": "constant"
+  },
+  {
+    "id": "arrays_strings_q2",
+    "skillId": "arrays_strings",
+    "difficulty": "intermediate",
+    "prompt": "Which technique is most efficient for finding all subarrays with a given sum in a sorted array?",
+    "options": [
+      { "value": "nested_loop", "label": "Nested loop O(n²)" },
+      { "value": "two_pointers", "label": "Two-pointer technique O(n)" },
+      { "value": "binary_search", "label": "Binary search O(n log n)" },
+      { "value": "hash_prefix", "label": "Prefix sum with hashmap O(n)" }
+    ],
+    "correctAnswer": "hash_prefix"
+  },
+  {
+    "id": "arrays_strings_q3",
+    "skillId": "arrays_strings",
+    "difficulty": "advanced",
+    "prompt": "What is the sliding window technique primarily used for?",
+    "options": [
+      { "value": "sorting", "label": "Sorting arrays efficiently" },
+      { "value": "contiguous_subarray", "label": "Optimally processing contiguous subarrays or substrings" },
+      { "value": "graph_traversal", "label": "Graph traversal problems" },
+      { "value": "matrix_mult", "label": "Matrix multiplication" }
+    ],
+    "correctAnswer": "contiguous_subarray"
+  },
+  {
+    "id": "hash_tables_q1",
+    "skillId": "hash_tables",
+    "difficulty": "beginner",
+    "prompt": "What is the average-case lookup complexity of a well-distributed hash table?",
+    "options": [
+      { "value": "constant", "label": "O(1)" },
+      { "value": "linear", "label": "O(n)" },
+      { "value": "logarithmic", "label": "O(log n)" },
+      { "value": "quadratic", "label": "O(n²)" }
+    ],
+    "correctAnswer": "constant"
+  },
+  {
+    "id": "hash_tables_q2",
+    "skillId": "hash_tables",
+    "difficulty": "intermediate",
+    "prompt": "When does a hash table collision occur?",
+    "options": [
+      { "value": "when_full", "label": "When the table is completely full" },
+      { "value": "same_key", "label": "When two different keys hash to the same bucket" },
+      { "value": "duplicate_val", "label": "When two identical values are inserted" },
+      { "value": "prime_size", "label": "When the table size is a prime number" }
+    ],
+    "correctAnswer": "same_key"
+  },
+  {
+    "id": "hash_tables_q3",
+    "skillId": "hash_tables",
+    "difficulty": "advanced",
+    "prompt": "Which collision resolution strategy uses a linked list at each bucket?",
+    "options": [
+      { "value": "linear_probe", "label": "Linear probing" },
+      { "value": "chaining", "label": "Separate chaining" },
+      { "value": "double_hash", "label": "Double hashing" },
+      { "value": "quadratic_probe", "label": "Quadratic probing" }
+    ],
+    "correctAnswer": "chaining"
+  },
+  {
+    "id": "linked_lists_q1",
+    "skillId": "linked_lists",
+    "difficulty": "beginner",
+    "prompt": "Which pointer pair is commonly used to detect a cycle in a linked list?",
+    "options": [
+      { "value": "left-right", "label": "Left and right pointers" },
+      { "value": "fast-slow", "label": "Fast and slow pointers (Floyd's algorithm)" },
+      { "value": "root-leaf", "label": "Root and leaf pointers" },
+      { "value": "front-back", "label": "Front and back pointers" }
+    ],
+    "correctAnswer": "fast-slow"
+  },
+  {
+    "id": "linked_lists_q2",
+    "skillId": "linked_lists",
+    "difficulty": "intermediate",
+    "prompt": "What is the time complexity to reverse a singly linked list?",
+    "options": [
+      { "value": "o1", "label": "O(1)" },
+      { "value": "on", "label": "O(n)" },
+      { "value": "ologn", "label": "O(log n)" },
+      { "value": "on2", "label": "O(n²)" }
+    ],
+    "correctAnswer": "on"
+  },
+  {
+    "id": "linked_lists_q3",
+    "skillId": "linked_lists",
+    "difficulty": "advanced",
+    "prompt": "How would you find the middle node of a linked list in a single pass without knowing the length?",
+    "options": [
+      { "value": "count_twice", "label": "Count all nodes, then traverse again to the midpoint" },
+      { "value": "fast_slow_middle", "label": "Use fast/slow pointers: when fast reaches end, slow is at middle" },
+      { "value": "array_convert", "label": "Copy all nodes to an array and index the middle" },
+      { "value": "stack_method", "label": "Push all nodes to a stack and pop half" }
+    ],
+    "correctAnswer": "fast_slow_middle"
+  },
+  {
+    "id": "stacks_queues_q1",
+    "skillId": "stacks_queues",
+    "difficulty": "beginner",
+    "prompt": "Which data structure follows last-in, first-out (LIFO) ordering?",
+    "options": [
+      { "value": "queue", "label": "Queue" },
+      { "value": "stack", "label": "Stack" },
+      { "value": "graph", "label": "Graph" },
+      { "value": "heap", "label": "Heap" }
+    ],
+    "correctAnswer": "stack"
+  },
+  {
+    "id": "stacks_queues_q2",
+    "skillId": "stacks_queues",
+    "difficulty": "intermediate",
+    "prompt": "What is a monotonic stack used for?",
+    "options": [
+      { "value": "sorting", "label": "General sorting" },
+      { "value": "next_greater", "label": "Efficiently finding the next greater/smaller element" },
+      { "value": "bfs", "label": "Breadth-first graph traversal" },
+      { "value": "hashing", "label": "Computing hash values" }
+    ],
+    "correctAnswer": "next_greater"
+  },
+  {
+    "id": "stacks_queues_q3",
+    "skillId": "stacks_queues",
+    "difficulty": "advanced",
+    "prompt": "Which data structure allows O(1) insertion at both ends and O(1) removal from both ends?",
+    "options": [
+      { "value": "array", "label": "Regular array" },
+      { "value": "deque", "label": "Deque (double-ended queue)" },
+      { "value": "sll", "label": "Singly linked list" },
+      { "value": "bst", "label": "Binary search tree" }
+    ],
+    "correctAnswer": "deque"
+  },
+  {
+    "id": "trees_graphs_q1",
+    "skillId": "trees_graphs",
+    "difficulty": "beginner",
+    "prompt": "Which traversal explores a graph level by level using a queue?",
+    "options": [
+      { "value": "dfs", "label": "Depth-first search" },
+      { "value": "bfs", "label": "Breadth-first search" },
+      { "value": "binary", "label": "Binary search" },
+      { "value": "inorder", "label": "In-order traversal" }
+    ],
+    "correctAnswer": "bfs"
+  },
+  {
+    "id": "trees_graphs_q2",
+    "skillId": "trees_graphs",
+    "difficulty": "intermediate",
+    "prompt": "What is the height of a balanced binary tree with n nodes?",
+    "options": [
+      { "value": "on", "label": "O(n)" },
+      { "value": "ologn", "label": "O(log n)" },
+      { "value": "o1", "label": "O(1)" },
+      { "value": "on2", "label": "O(n²)" }
+    ],
+    "correctAnswer": "ologn"
+  },
+  {
+    "id": "trees_graphs_q3",
+    "skillId": "trees_graphs",
+    "difficulty": "advanced",
+    "prompt": "Which algorithm finds the shortest path in a weighted graph with non-negative edges?",
+    "options": [
+      { "value": "bfs_algo", "label": "BFS (unweighted only)" },
+      { "value": "dijkstra", "label": "Dijkstra's algorithm" },
+      { "value": "kruskal", "label": "Kruskal's algorithm (MST)" },
+      { "value": "dfs_algo", "label": "DFS" }
+    ],
+    "correctAnswer": "dijkstra"
+  },
+  {
+    "id": "dynamic_programming_q1",
+    "skillId": "dynamic_programming",
+    "difficulty": "beginner",
+    "prompt": "Dynamic programming primarily combines which two ideas?",
+    "options": [
+      { "value": "sorting-hashing", "label": "Sorting and hashing" },
+      { "value": "greedy-random", "label": "Greedy choice and randomness" },
+      { "value": "overlap-optimal", "label": "Overlapping subproblems and optimal substructure" },
+      { "value": "recursion-search", "label": "Recursion and binary search" }
+    ],
+    "correctAnswer": "overlap-optimal"
+  },
+  {
+    "id": "dynamic_programming_q2",
+    "skillId": "dynamic_programming",
+    "difficulty": "intermediate",
+    "prompt": "What is the difference between top-down (memoization) and bottom-up (tabulation) DP?",
+    "options": [
+      { "value": "same", "label": "They are identical in all respects" },
+      { "value": "topdown_recursive", "label": "Top-down uses recursion with caching; bottom-up fills a table iteratively" },
+      { "value": "bottomup_slower", "label": "Bottom-up is always slower due to more iterations" },
+      { "value": "topdown_iterative", "label": "Top-down is iterative; bottom-up is recursive" }
+    ],
+    "correctAnswer": "topdown_recursive"
+  },
+  {
+    "id": "dynamic_programming_q3",
+    "skillId": "dynamic_programming",
+    "difficulty": "advanced",
+    "prompt": "What is the time complexity of solving the 0/1 Knapsack problem with DP for n items and capacity W?",
+    "options": [
+      { "value": "on", "label": "O(n)" },
+      { "value": "onw", "label": "O(n × W)" },
+      { "value": "on2", "label": "O(n²)" },
+      { "value": "o2n", "label": "O(2ⁿ)" }
+    ],
+    "correctAnswer": "onw"
+  },
+  {
+    "id": "sql_q1",
+    "skillId": "sql",
+    "difficulty": "beginner",
+    "prompt": "Which SQL clause filters grouped results after aggregation?",
+    "options": [
+      { "value": "where", "label": "WHERE" },
+      { "value": "having", "label": "HAVING" },
+      { "value": "order", "label": "ORDER BY" },
+      { "value": "limit", "label": "LIMIT" }
+    ],
+    "correctAnswer": "having"
+  },
+  {
+    "id": "sql_q2",
+    "skillId": "sql",
+    "difficulty": "intermediate",
+    "prompt": "What type of JOIN returns all rows from both tables, including unmatched rows filled with NULLs?",
+    "options": [
+      { "value": "inner", "label": "INNER JOIN" },
+      { "value": "left", "label": "LEFT JOIN" },
+      { "value": "full_outer", "label": "FULL OUTER JOIN" },
+      { "value": "cross", "label": "CROSS JOIN" }
+    ],
+    "correctAnswer": "full_outer"
+  },
+  {
+    "id": "sql_q3",
+    "skillId": "sql",
+    "difficulty": "advanced",
+    "prompt": "Which SQL feature allows you to rank rows within a partition without collapsing rows like GROUP BY does?",
+    "options": [
+      { "value": "subquery", "label": "Subquery" },
+      { "value": "window_func", "label": "Window functions (RANK, ROW_NUMBER, etc.)" },
+      { "value": "cte", "label": "Common Table Expression (CTE)" },
+      { "value": "index", "label": "Database index" }
+    ],
+    "correctAnswer": "window_func"
+  },
+  {
+    "id": "statistics_prob_q1",
+    "skillId": "statistics_prob",
+    "difficulty": "beginner",
+    "prompt": "A p-value is used to measure what in hypothesis testing?",
+    "options": [
+      { "value": "sample-size", "label": "The sample size" },
+      { "value": "null-evidence", "label": "Evidence against the null hypothesis" },
+      { "value": "mean", "label": "The sample mean" },
+      { "value": "variance", "label": "The sample variance" }
+    ],
+    "correctAnswer": "null-evidence"
+  },
+  {
+    "id": "statistics_prob_q2",
+    "skillId": "statistics_prob",
+    "difficulty": "intermediate",
+    "prompt": "What does the Central Limit Theorem state?",
+    "options": [
+      { "value": "all_normal", "label": "All distributions are normal" },
+      { "value": "sample_means_normal", "label": "The distribution of sample means approaches normal as sample size grows" },
+      { "value": "variance_zero", "label": "Variance converges to zero" },
+      { "value": "median_mean", "label": "The median always equals the mean" }
+    ],
+    "correctAnswer": "sample_means_normal"
+  },
+  {
+    "id": "statistics_prob_q3",
+    "skillId": "statistics_prob",
+    "difficulty": "advanced",
+    "prompt": "In Bayesian inference, what does the posterior distribution represent?",
+    "options": [
+      { "value": "prior_only", "label": "The prior belief before seeing data" },
+      { "value": "likelihood", "label": "The probability of the data given parameters" },
+      { "value": "posterior_updated", "label": "Updated belief about parameters after observing data" },
+      { "value": "marginal", "label": "The marginal distribution of the data" }
+    ],
+    "correctAnswer": "posterior_updated"
+  },
+  {
+    "id": "machine_learning_q1",
+    "skillId": "machine_learning",
+    "difficulty": "beginner",
+    "prompt": "What is the main purpose of a validation set?",
+    "options": [
+      { "value": "train-only", "label": "To replace the training set" },
+      { "value": "tune", "label": "To tune or compare model choices" },
+      { "value": "store", "label": "To store production data" },
+      { "value": "deploy", "label": "To deploy the model" }
+    ],
+    "correctAnswer": "tune"
+  },
+  {
+    "id": "machine_learning_q2",
+    "skillId": "machine_learning",
+    "difficulty": "intermediate",
+    "prompt": "What does regularization (L1/L2) help prevent in machine learning?",
+    "options": [
+      { "value": "underfitting", "label": "Underfitting" },
+      { "value": "overfitting", "label": "Overfitting" },
+      { "value": "slow_training", "label": "Slow training speed" },
+      { "value": "data_loss", "label": "Data loss" }
+    ],
+    "correctAnswer": "overfitting"
+  },
+  {
+    "id": "machine_learning_q3",
+    "skillId": "machine_learning",
+    "difficulty": "advanced",
+    "prompt": "What is gradient descent used for in machine learning?",
+    "options": [
+      { "value": "data_clean", "label": "Cleaning training data" },
+      { "value": "minimize_loss", "label": "Minimizing the loss function by iteratively updating model weights" },
+      { "value": "split_data", "label": "Splitting data into train/test sets" },
+      { "value": "feature_select", "label": "Automatic feature selection only" }
+    ],
+    "correctAnswer": "minimize_loss"
+  },
+  {
+    "id": "deep_learning_q1",
+    "skillId": "deep_learning",
+    "difficulty": "beginner",
+    "prompt": "During neural-network training, backpropagation computes what?",
+    "options": [
+      { "value": "gradients", "label": "Gradients for model parameters" },
+      { "value": "database", "label": "Database indexes" },
+      { "value": "clusters", "label": "Data clusters only" },
+      { "value": "labels", "label": "New labels" }
+    ],
+    "correctAnswer": "gradients"
+  },
+  {
+    "id": "deep_learning_q2",
+    "skillId": "deep_learning",
+    "difficulty": "intermediate",
+    "prompt": "What problem does the attention mechanism in Transformers primarily solve?",
+    "options": [
+      { "value": "speed", "label": "Reducing training speed" },
+      { "value": "long_range", "label": "Capturing long-range dependencies without sequential processing" },
+      { "value": "memory", "label": "Reducing memory usage" },
+      { "value": "overfitting", "label": "Preventing overfitting automatically" }
+    ],
+    "correctAnswer": "long_range"
+  },
+  {
+    "id": "deep_learning_q3",
+    "skillId": "deep_learning",
+    "difficulty": "advanced",
+    "prompt": "What is the vanishing gradient problem in deep neural networks?",
+    "options": [
+      { "value": "missing_data", "label": "Gradients becoming NaN due to missing data" },
+      { "value": "small_gradients", "label": "Gradients shrinking exponentially through layers, making early layers learn slowly" },
+      { "value": "exploding", "label": "Gradients growing too large and destabilizing training" },
+      { "value": "no_activation", "label": "Removing all activation functions" }
+    ],
+    "correctAnswer": "small_gradients"
+  },
+  {
+    "id": "data_pipelines_q1",
+    "skillId": "data_pipelines",
+    "difficulty": "beginner",
+    "prompt": "What is a data pipeline primarily responsible for?",
+    "options": [
+      { "value": "ui", "label": "Rendering a user interface" },
+      { "value": "etl", "label": "Moving and transforming data between stages (ETL)" },
+      { "value": "auth", "label": "Authenticating users only" },
+      { "value": "sorting", "label": "Sorting one in-memory array" }
+    ],
+    "correctAnswer": "etl"
+  },
+  {
+    "id": "data_pipelines_q2",
+    "skillId": "data_pipelines",
+    "difficulty": "intermediate",
+    "prompt": "Apache Spark's lazy evaluation means:",
+    "options": [
+      { "value": "runs_slow", "label": "Transformations run very slowly" },
+      { "value": "deferred", "label": "Transformations are deferred until an action (collect, write) is triggered" },
+      { "value": "no_cache", "label": "Data is never cached" },
+      { "value": "sequential", "label": "All operations run sequentially on one node" }
+    ],
+    "correctAnswer": "deferred"
+  },
+  {
+    "id": "data_pipelines_q3",
+    "skillId": "data_pipelines",
+    "difficulty": "advanced",
+    "prompt": "What is the key difference between batch processing and stream processing?",
+    "options": [
+      { "value": "batch_faster", "label": "Batch processing is always faster" },
+      { "value": "stream_bounded", "label": "Stream processes bounded datasets; batch processes infinite streams" },
+      { "value": "latency", "label": "Batch processes collected data periodically; stream processes data continuously as it arrives" },
+      { "value": "no_diff", "label": "There is no practical difference" }
+    ],
+    "correctAnswer": "latency"
+  }
+]

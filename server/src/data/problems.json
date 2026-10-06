@@ -1,0 +1,182 @@
+[
+  {
+    "id": "two_sum",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "concepts": ["Array", "HashMap"],
+    "skills": ["arrays_strings", "hash_tables"],
+    "estimatedMinutes": 15,
+    "description": "Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice.",
+    "expectedTimeComplexity": "O(N)",
+    "expectedSpaceComplexity": "O(N)",
+    "starterCode": "function twoSum(nums, target) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function twoSum(nums, target) {\n  const map = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    const complement = target - nums[i];\n    if (map.has(complement)) {\n      return [map.get(complement), i];\n    }\n    map.set(nums[i], i);\n  }\n  return [];\n}",
+    "testCases": [
+      { "id": 1, "input": { "nums": [2, 7, 11, 15], "target": 9 }, "expected": [0, 1], "isEdgeCase": false },
+      { "id": 2, "input": { "nums": [3, 2, 4], "target": 6 }, "expected": [1, 2], "isEdgeCase": false },
+      { "id": 3, "input": { "nums": [3, 3], "target": 6 }, "expected": [0, 1], "isEdgeCase": true },
+      { "id": 4, "input": { "nums": [-1, -2, -3, -4, -5], "target": -8 }, "expected": [2, 4], "isEdgeCase": true }
+    ],
+    "hints": [
+      "A brute-force approach checks every pair using nested loops in O(N^2) time.",
+      "Can you use a HashMap to look up whether (target - current_element) has already been encountered in O(1) time?"
+    ],
+    "vivaQuestions": [
+      {
+        "question": "Why is the HashMap approach O(N) time and O(N) space?",
+        "expectedAnswer": "We iterate through the array once. At each step, Map.has() and Map.get() run in O(1) average time. We store at most N elements in the map, requiring linear O(N) auxiliary space."
+      },
+      {
+        "question": "Can Two Sum be solved in O(1) space?",
+        "expectedAnswer": "Yes, if the array is sorted, we can use the Two Pointers technique (left and right pointers) to achieve O(1) space, but if sorting is needed first, it requires O(N log N) time."
+      }
+    ]
+  },
+  {
+    "id": "container_with_most_water",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "difficulty": "Medium",
+    "concepts": ["Two Pointers", "Array Traversal", "Optimization"],
+    "skills": ["arrays_strings"],
+    "estimatedMinutes": 25,
+    "description": "You are given an integer array `height` of length `n`. Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store.",
+    "expectedTimeComplexity": "O(N)",
+    "expectedSpaceComplexity": "O(1)",
+    "starterCode": "function maxArea(height) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function maxArea(height) {\n  let left = 0, right = height.length - 1;\n  let maxWater = 0;\n  while (left < right) {\n    const width = right - left;\n    const h = Math.min(height[left], height[right]);\n    maxWater = Math.max(maxWater, width * h);\n    if (height[left] < height[right]) {\n      left++;\n    } else {\n      right--;\n    }\n  }\n  return maxWater;\n}",
+    "testCases": [
+      { "id": 1, "input": { "height": [1, 8, 6, 2, 5, 4, 8, 3, 7] }, "expected": 49, "isEdgeCase": false },
+      { "id": 2, "input": { "height": [1, 1] }, "expected": 1, "isEdgeCase": true },
+      { "id": 3, "input": { "height": [4, 3, 2, 1, 4] }, "expected": 16, "isEdgeCase": false }
+    ],
+    "hints": [
+      "The width decreases as we move inwards. To compensate for reduced width, we must seek taller boundaries.",
+      "Always advance the pointer with the smaller height, as moving the taller boundary can never increase the area."
+    ],
+    "vivaQuestions": [
+      {
+        "question": "Why do we always move the pointer pointing to the shorter line?",
+        "expectedAnswer": "The area is bounded by the minimum of the two heights. Moving the taller line while keeping the shorter line cannot increase the height limit, and the width is guaranteed to shrink. Therefore, the only chance to find a larger area is by moving the shorter pointer."
+      }
+    ]
+  },
+  {
+    "id": "longest_substring_without_repeating",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "concepts": ["Sliding Window", "HashMap", "Array Traversal"],
+    "skills": ["arrays_strings", "hash_tables"],
+    "estimatedMinutes": 30,
+    "description": "Given a string `s`, find the length of the longest substring without duplicate characters.",
+    "expectedTimeComplexity": "O(N)",
+    "expectedSpaceComplexity": "O(min(N, M))",
+    "starterCode": "function lengthOfLongestSubstring(s) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function lengthOfLongestSubstring(s) {\n  const map = new Map();\n  let maxLen = 0;\n  let left = 0;\n  for (let right = 0; right < s.length; right++) {\n    const char = s[right];\n    if (map.has(char) && map.get(char) >= left) {\n      left = map.get(char) + 1;\n    }\n    map.set(char, right);\n    maxLen = Math.max(maxLen, right - left + 1);\n  }\n  return maxLen;\n}",
+    "testCases": [
+      { "id": 1, "input": { "s": "abcabcbb" }, "expected": 3, "isEdgeCase": false },
+      { "id": 2, "input": { "s": "bbbbb" }, "expected": 1, "isEdgeCase": true },
+      { "id": 3, "input": { "s": "pwwkew" }, "expected": 3, "isEdgeCase": false },
+      { "id": 4, "input": { "s": "" }, "expected": 0, "isEdgeCase": true }
+    ],
+    "hints": [
+      "Use a sliding window `[left, right]` where right expands forward.",
+      "When a duplicate is encountered, move `left` pointer to one position beyond the previous occurrence of that character."
+    ],
+    "vivaQuestions": [
+      {
+        "question": "What is the role of the left pointer in this sliding window?",
+        "expectedAnswer": "The left pointer marks the start of the current candidate substring that contains exclusively unique characters. When a duplicate appears within the window, the left pointer jumps forward to ensure the substring remains strictly duplicate-free."
+      }
+    ]
+  },
+  {
+    "id": "course_schedule_topo",
+    "title": "Course Schedule (Topological Ordering)",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "concepts": ["Graph Traversal", "Topological Sort", "BFS", "DFS"],
+    "skills": ["trees_graphs", "stacks_queues"],
+    "estimatedMinutes": 35,
+    "description": "There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [a, b]` indicates that you must take course `b` first if you want to take course `a`. Return `true` if you can finish all courses. Otherwise, return `false`.",
+    "expectedTimeComplexity": "O(V + E)",
+    "expectedSpaceComplexity": "O(V + E)",
+    "starterCode": "function canFinish(numCourses, prerequisites) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function canFinish(numCourses, prerequisites) {\n  const inDegree = new Array(numCourses).fill(0);\n  const adj = Array.from({ length: numCourses }, () => []);\n  for (const [course, prereq] of prerequisites) {\n    adj[prereq].push(course);\n    inDegree[course]++;\n  }\n  const queue = [];\n  for (let i = 0; i < numCourses; i++) {\n    if (inDegree[i] === 0) queue.push(i);\n  }\n  let count = 0;\n  while (queue.length > 0) {\n    const node = queue.shift();\n    count++;\n    for (const next of adj[node]) {\n      inDegree[next]--;\n      if (inDegree[next] === 0) queue.push(next);\n    }\n  }\n  return count === numCourses;\n}",
+    "testCases": [
+      { "id": 1, "input": { "numCourses": 2, "prerequisites": [[1, 0]] }, "expected": true, "isEdgeCase": false },
+      { "id": 2, "input": { "numCourses": 2, "prerequisites": [[1, 0], [0, 1]] }, "expected": false, "isEdgeCase": true },
+      { "id": 3, "input": { "numCourses": 3, "prerequisites": [[0, 1], [0, 2], [1, 2]] }, "expected": true, "isEdgeCase": false }
+    ],
+    "hints": [
+      "This problem reduces to detecting whether a directed graph contains a cycle.",
+      "Use Kahn's algorithm (BFS with in-degree counters) or DFS 3-color cycle detection."
+    ],
+    "vivaQuestions": [
+      {
+        "question": "How does Kahn's algorithm detect cycles in a directed graph?",
+        "expectedAnswer": "Kahn's algorithm initializes a queue with all nodes having an in-degree of 0. When a node is popped, we decrement the in-degree of its outgoing neighbors. If there is a cycle, nodes within the cycle will never reach an in-degree of 0, so the total count of processed nodes will be strictly less than V."
+      }
+    ]
+  },
+  {
+    "id": "coin_change_dp",
+    "title": "Coin Change (Unbounded DP)",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "concepts": ["Dynamic Programming", "Memoization", "Tabulation"],
+    "skills": ["dynamic_programming"],
+    "estimatedMinutes": 35,
+    "description": "You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`.",
+    "expectedTimeComplexity": "O(amount * coins.length)",
+    "expectedSpaceComplexity": "O(amount)",
+    "starterCode": "function coinChange(coins, amount) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function coinChange(coins, amount) {\n  const dp = new Array(amount + 1).fill(Infinity);\n  dp[0] = 0;\n  for (let i = 1; i <= amount; i++) {\n    for (const coin of coins) {\n      if (i - coin >= 0) {\n        dp[i] = Math.min(dp[i], dp[i - coin] + 1);\n      }\n    }\n  }\n  return dp[amount] === Infinity ? -1 : dp[amount];\n}",
+    "testCases": [
+      { "id": 1, "input": { "coins": [1, 2, 5], "amount": 11 }, "expected": 3, "isEdgeCase": false },
+      { "id": 2, "input": { "coins": [2], "amount": 3 }, "expected": -1, "isEdgeCase": true },
+      { "id": 3, "input": { "coins": [1], "amount": 0 }, "expected": 0, "isEdgeCase": true }
+    ],
+    "hints": [
+      "Let dp[i] represent the minimum coins required to make amount i.",
+      "The recurrence relation is: dp[i] = min(dp[i], dp[i - coin] + 1) for all coin in coins."
+    ],
+    "vivaQuestions": [
+      {
+        "question": "Why is a greedy approach (always choosing the largest denomination first) insufficient for Coin Change?",
+        "expectedAnswer": "Greedy fails on canonical cases like coins = [1, 3, 4] and amount = 6. Greedy chooses 4 + 1 + 1 (3 coins), whereas the optimal DP solution is 3 + 3 (2 coins). DP explores all overlapping substructures to guarantee the global minimum."
+      }
+    ]
+  },
+  {
+    "id": "daily_temperatures_stack",
+    "title": "Daily Temperatures (Monotonic Stack)",
+    "slug": "daily-temperatures",
+    "difficulty": "Medium",
+    "concepts": ["Monotonic Stack", "Array Traversal"],
+    "skills": ["stacks_queues", "arrays_strings"],
+    "estimatedMinutes": 25,
+    "description": "Given an array of integers `temperatures` represents the daily temperatures, return an array `answer` such that `answer[i]` is the number of days you have to wait after the `i`th day to get a warmer temperature. If there is no future day for which this is possible, keep `answer[i] == 0` instead.",
+    "expectedTimeComplexity": "O(N)",
+    "expectedSpaceComplexity": "O(N)",
+    "starterCode": "function dailyTemperatures(temperatures) {\n  // Write your code here\n  \n}",
+    "solutionCode": "function dailyTemperatures(temperatures) {\n  const res = new Array(temperatures.length).fill(0);\n  const stack = []; // stores indices\n  for (let i = 0; i < temperatures.length; i++) {\n    while (stack.length > 0 && temperatures[i] > temperatures[stack[stack.length - 1]]) {\n      const prevIdx = stack.pop();\n      res[prevIdx] = i - prevIdx;\n    }\n    stack.push(i);\n  }\n  return res;\n}",
+    "testCases": [
+      { "id": 1, "input": { "temperatures": [73, 74, 75, 71, 69, 72, 76, 73] }, "expected": [1, 1, 4, 2, 1, 1, 0, 0], "isEdgeCase": false },
+      { "id": 2, "input": { "temperatures": [30, 40, 50, 60] }, "expected": [1, 1, 1, 0], "isEdgeCase": false },
+      { "id": 3, "input": { "temperatures": [30, 60, 90] }, "expected": [1, 1, 0], "isEdgeCase": true }
+    ],
+    "hints": [
+      "Instead of searching forward for every day with O(N^2) scans, maintain a decreasing monotonic stack.",
+      "Store indices on the stack so you can compute index differences `i - prevIndex`."
+    ],
+    "vivaQuestions": [
+      {
+        "question": "Even though there is a while loop inside the for loop, why is this O(N) time?",
+        "expectedAnswer": "Each index is pushed onto the stack exactly once and popped from the stack at most once across the entire algorithm run. Therefore, the total number of stack operations across all iterations is at most 2N, giving strictly linear O(N) amortized time."
+      }
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "software_developer",
+    "title": "Software Developer",
+    "category": "Software Engineering",
+    "description": "Engineers scalable end-to-end applications, core software libraries, and desktop/web features using clean software engineering patterns, version control, and data structures.",
+    "marketDemand": 95,
+    "medianSalary": "$115,000 / ₹14-22 LPA",
+    "requiredSkills": [
+      { "skillId": "javascript_typescript", "skillName": "JavaScript & TypeScript", "minProficiency": 80, "weight": 1.5 },
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 75, "weight": 1.4 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 75, "weight": 1.3 },
+      { "skillId": "git_system_design", "skillName": "Git & System Architecture", "minProficiency": 70, "weight": 1.2 }
+    ],
+    "preferredSkills": [
+      { "skillId": "backend_systems", "skillName": "Backend Systems & REST APIs", "minProficiency": 65, "weight": 1.0 },
+      { "skillId": "stacks_queues", "skillName": "Stacks & Queues", "minProficiency": 60, "weight": 0.8 },
+      { "skillId": "trees_graphs", "skillName": "Trees & Graphs", "minProficiency": 55, "weight": 0.7 }
+    ],
+    "skillWeights": {
+      "javascript_typescript": 1.5,
+      "arrays_strings": 1.4,
+      "hash_tables": 1.3,
+      "git_system_design": 1.2,
+      "backend_systems": 1.0,
+      "stacks_queues": 0.8,
+      "trees_graphs": 0.7
+    },
+    "prerequisiteSkills": ["javascript_typescript", "arrays_strings"],
+    "relevantConcepts": ["Object-Oriented Programming", "Design Patterns", "Version Control", "Unit Testing"],
+    "recommendedLearningAreas": ["Data Structures Mastery", "Clean Code Architecture", "System Design Fundamentals"]
+  },
+  {
+    "id": "data_analyst",
+    "title": "Data Analyst",
+    "category": "Analytics",
+    "description": "Extracts, cleans, and visualizes company metrics to answer business questions, run A/B test experiments, and generate automated reporting dashboards.",
+    "marketDemand": 88,
+    "medianSalary": "$85,000 / ₹8-14 LPA",
+    "requiredSkills": [
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 85, "weight": 2.0 },
+      { "skillId": "python", "skillName": "Python", "minProficiency": 75, "weight": 1.5 },
+      { "skillId": "statistics_prob", "skillName": "Statistics & Probability", "minProficiency": 70, "weight": 1.4 }
+    ],
+    "preferredSkills": [
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 55, "weight": 0.8 },
+      { "skillId": "database_admin", "skillName": "Database Administration & Tuning", "minProficiency": 50, "weight": 0.6 }
+    ],
+    "skillWeights": {
+      "sql": 2.0,
+      "python": 1.5,
+      "statistics_prob": 1.4,
+      "arrays_strings": 0.8,
+      "database_admin": 0.6
+    },
+    "prerequisiteSkills": ["sql", "python"],
+    "relevantConcepts": ["Data Visualization", "SQL Window Functions", "Hypothesis Testing", "ETL Basics"],
+    "recommendedLearningAreas": ["Advanced Analytical SQL", "Pandas & Matplotlib", "Business Intelligence Dashboards"]
+  },
+  {
+    "id": "data_scientist",
+    "title": "Data Scientist",
+    "category": "Data Science",
+    "description": "Transforms unstructured data into predictive models and actionable strategic insights using statistical inference, machine learning, and clean algorithmic modeling.",
+    "marketDemand": 94,
+    "medianSalary": "$125,000 / ₹16-24 LPA",
+    "requiredSkills": [
+      { "skillId": "python", "skillName": "Python", "minProficiency": 85, "weight": 1.5 },
+      { "skillId": "statistics_prob", "skillName": "Statistics & Probability", "minProficiency": 80, "weight": 1.8 },
+      { "skillId": "machine_learning", "skillName": "Machine Learning", "minProficiency": 80, "weight": 1.7 },
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 75, "weight": 1.3 }
+    ],
+    "preferredSkills": [
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 70, "weight": 1.0 },
+      { "skillId": "deep_learning", "skillName": "Deep Learning & NLP", "minProficiency": 60, "weight": 0.9 },
+      { "skillId": "dynamic_programming", "skillName": "Dynamic Programming", "minProficiency": 60, "weight": 0.8 }
+    ],
+    "skillWeights": {
+      "python": 1.5,
+      "statistics_prob": 1.8,
+      "machine_learning": 1.7,
+      "sql": 1.3,
+      "arrays_strings": 1.0,
+      "deep_learning": 0.9,
+      "dynamic_programming": 0.8
+    },
+    "prerequisiteSkills": ["python", "statistics_prob"],
+    "relevantConcepts": ["Statistical Inference", "Supervised Learning", "Exploratory Data Analysis", "Feature Selection"],
+    "recommendedLearningAreas": ["Advanced Machine Learning", "Statistical Modeling", "Big Data Analytics"]
+  },
+  {
+    "id": "ml_engineer",
+    "title": "Machine Learning Engineer",
+    "category": "AI & Systems",
+    "description": "Designs, deploys, and optimizes scalable machine learning and deep learning models into production systems with high throughput and low inference latency.",
+    "marketDemand": 96,
+    "medianSalary": "$140,000 / ₹18-30 LPA",
+    "requiredSkills": [
+      { "skillId": "python", "skillName": "Python", "minProficiency": 90, "weight": 1.5 },
+      { "skillId": "machine_learning", "skillName": "Machine Learning", "minProficiency": 85, "weight": 1.8 },
+      { "skillId": "deep_learning", "skillName": "Deep Learning & NLP", "minProficiency": 80, "weight": 1.6 },
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 80, "weight": 1.2 }
+    ],
+    "preferredSkills": [
+      { "skillId": "trees_graphs", "skillName": "Trees & Graphs", "minProficiency": 75, "weight": 1.3 },
+      { "skillId": "data_pipelines", "skillName": "Data Pipelines & Spark", "minProficiency": 70, "weight": 1.1 },
+      { "skillId": "dynamic_programming", "skillName": "Dynamic Programming", "minProficiency": 70, "weight": 1.0 }
+    ],
+    "skillWeights": {
+      "python": 1.5,
+      "machine_learning": 1.8,
+      "deep_learning": 1.6,
+      "arrays_strings": 1.2,
+      "trees_graphs": 1.3,
+      "data_pipelines": 1.1,
+      "dynamic_programming": 1.0
+    },
+    "prerequisiteSkills": ["python", "machine_learning"],
+    "relevantConcepts": ["Model Deployment", "Neural Networks", "Feature Stores", "Low-Latency Inference"],
+    "recommendedLearningAreas": ["Deep Learning Architectures", "MLOps & Model Serving", "Algorithmic Efficiency"]
+  },
+  {
+    "id": "backend_developer",
+    "title": "Backend Developer",
+    "category": "Backend Engineering",
+    "description": "Architects resilient web APIs, microservice infrastructure, database interaction layers, and backend state systems for high-traffic platforms.",
+    "marketDemand": 94,
+    "medianSalary": "$120,000 / ₹15-24 LPA",
+    "requiredSkills": [
+      { "skillId": "backend_systems", "skillName": "Backend Systems & REST APIs", "minProficiency": 85, "weight": 1.8 },
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 80, "weight": 1.5 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 80, "weight": 1.3 },
+      { "skillId": "javascript_typescript", "skillName": "JavaScript & TypeScript", "minProficiency": 75, "weight": 1.2 }
+    ],
+    "preferredSkills": [
+      { "skillId": "trees_graphs", "skillName": "Trees & Graphs", "minProficiency": 70, "weight": 1.0 },
+      { "skillId": "devops_cloud", "skillName": "DevOps, Containers & Cloud", "minProficiency": 65, "weight": 0.9 },
+      { "skillId": "database_admin", "skillName": "Database Administration & Tuning", "minProficiency": 65, "weight": 0.8 }
+    ],
+    "skillWeights": {
+      "backend_systems": 1.8,
+      "sql": 1.5,
+      "hash_tables": 1.3,
+      "javascript_typescript": 1.2,
+      "trees_graphs": 1.0,
+      "devops_cloud": 0.9,
+      "database_admin": 0.8
+    },
+    "prerequisiteSkills": ["javascript_typescript", "sql"],
+    "relevantConcepts": ["REST Architecture", "Database Indexing", "Authentication & JWT", "Caching Strategies"],
+    "recommendedLearningAreas": ["Microservices Design", "Advanced Relational Schema", "Async Programming & Node.js"]
+  },
+  {
+    "id": "frontend_developer",
+    "title": "Frontend Developer",
+    "category": "Frontend Engineering",
+    "description": "Crafts rich, interactive, responsive web user interfaces with state-of-the-art visual components, accessibility standards, and optimal render performance.",
+    "marketDemand": 91,
+    "medianSalary": "$105,000 / ₹12-20 LPA",
+    "requiredSkills": [
+      { "skillId": "react_frontend", "skillName": "React & Web Frontend UI", "minProficiency": 85, "weight": 2.0 },
+      { "skillId": "javascript_typescript", "skillName": "JavaScript & TypeScript", "minProficiency": 85, "weight": 1.8 },
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 70, "weight": 1.1 }
+    ],
+    "preferredSkills": [
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 65, "weight": 0.9 },
+      { "skillId": "git_system_design", "skillName": "Git & System Architecture", "minProficiency": 60, "weight": 0.8 }
+    ],
+    "skillWeights": {
+      "react_frontend": 2.0,
+      "javascript_typescript": 1.8,
+      "arrays_strings": 1.1,
+      "hash_tables": 0.9,
+      "git_system_design": 0.8
+    },
+    "prerequisiteSkills": ["javascript_typescript", "react_frontend"],
+    "relevantConcepts": ["Component State Management", "DOM Rendering", "CSS Layouts", "Client-Side Routing"],
+    "recommendedLearningAreas": ["Advanced React Architecture", "Frontend Performance Tuning", "TypeScript Deep Dive"]
+  },
+  {
+    "id": "fullstack_developer",
+    "title": "Full Stack Developer",
+    "category": "Full Stack Engineering",
+    "description": "Bridges frontend UI development and backend API architectures to build end-to-end web applications, database models, and deployment workflows.",
+    "marketDemand": 96,
+    "medianSalary": "$130,000 / ₹16-28 LPA",
+    "requiredSkills": [
+      { "skillId": "javascript_typescript", "skillName": "JavaScript & TypeScript", "minProficiency": 85, "weight": 1.6 },
+      { "skillId": "react_frontend", "skillName": "React & Web Frontend UI", "minProficiency": 80, "weight": 1.5 },
+      { "skillId": "backend_systems", "skillName": "Backend Systems & REST APIs", "minProficiency": 80, "weight": 1.5 },
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 75, "weight": 1.2 }
+    ],
+    "preferredSkills": [
+      { "skillId": "arrays_strings", "skillName": "Arrays & Strings", "minProficiency": 70, "weight": 1.0 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 70, "weight": 0.9 },
+      { "skillId": "devops_cloud", "skillName": "DevOps, Containers & Cloud", "minProficiency": 60, "weight": 0.8 }
+    ],
+    "skillWeights": {
+      "javascript_typescript": 1.6,
+      "react_frontend": 1.5,
+      "backend_systems": 1.5,
+      "sql": 1.2,
+      "arrays_strings": 1.0,
+      "hash_tables": 0.9,
+      "devops_cloud": 0.8
+    },
+    "prerequisiteSkills": ["javascript_typescript", "react_frontend", "backend_systems"],
+    "relevantConcepts": ["Full Stack Integration", "State Management", "RESTful Design", "Database Schemas"],
+    "recommendedLearningAreas": ["End-to-End Application Architecture", "Next.js & Serverless", "DB Query Optimization"]
+  },
+  {
+    "id": "devops_engineer",
+    "title": "DevOps Engineer",
+    "category": "Cloud & Infrastructure",
+    "description": "Automates continuous integration/continuous deployment (CI/CD) pipelines, container orchestrations, server provisioning, and site reliability infrastructure.",
+    "marketDemand": 93,
+    "medianSalary": "$128,000 / ₹16-26 LPA",
+    "requiredSkills": [
+      { "skillId": "devops_cloud", "skillName": "DevOps, Containers & Cloud", "minProficiency": 85, "weight": 2.0 },
+      { "skillId": "backend_systems", "skillName": "Backend Systems & REST APIs", "minProficiency": 75, "weight": 1.4 },
+      { "skillId": "python", "skillName": "Python", "minProficiency": 70, "weight": 1.2 },
+      { "skillId": "git_system_design", "skillName": "Git & System Architecture", "minProficiency": 75, "weight": 1.3 }
+    ],
+    "preferredSkills": [
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 65, "weight": 0.9 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 60, "weight": 0.7 }
+    ],
+    "skillWeights": {
+      "devops_cloud": 2.0,
+      "backend_systems": 1.4,
+      "python": 1.2,
+      "git_system_design": 1.3,
+      "sql": 0.9,
+      "hash_tables": 0.7
+    },
+    "prerequisiteSkills": ["devops_cloud", "git_system_design"],
+    "relevantConcepts": ["Containerization (Docker)", "Kubernetes Orchestration", "Infrastructure as Code", "CI/CD Pipelines"],
+    "recommendedLearningAreas": ["Cloud Architecture (AWS/GCP)", "Kubernetes Deep Dive", "Automated Observability & Monitoring"]
+  },
+  {
+    "id": "cybersecurity_analyst",
+    "title": "Cybersecurity Analyst",
+    "category": "Security Engineering",
+    "description": "Protects organizational network assets, performs vulnerability threat assessments, implements cryptographic protections, and monitors for security breaches.",
+    "marketDemand": 90,
+    "medianSalary": "$110,000 / ₹13-22 LPA",
+    "requiredSkills": [
+      { "skillId": "cybersecurity", "skillName": "Cybersecurity & Network Defense", "minProficiency": 85, "weight": 2.0 },
+      { "skillId": "backend_systems", "skillName": "Backend Systems & REST APIs", "minProficiency": 75, "weight": 1.4 },
+      { "skillId": "python", "skillName": "Python", "minProficiency": 70, "weight": 1.3 }
+    ],
+    "preferredSkills": [
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 65, "weight": 1.0 },
+      { "skillId": "devops_cloud", "skillName": "DevOps, Containers & Cloud", "minProficiency": 60, "weight": 0.8 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 60, "weight": 0.7 }
+    ],
+    "skillWeights": {
+      "cybersecurity": 2.0,
+      "backend_systems": 1.4,
+      "python": 1.3,
+      "sql": 1.0,
+      "devops_cloud": 0.8,
+      "hash_tables": 0.7
+    },
+    "prerequisiteSkills": ["cybersecurity"],
+    "relevantConcepts": ["Threat Detection", "Penetration Testing", "Public Key Cryptography", "OWASP Security Standards"],
+    "recommendedLearningAreas": ["Ethical Hacking", "Network Intrusion Analysis", "Security Incident Response"]
+  },
+  {
+    "id": "database_administrator",
+    "title": "Database Administrator",
+    "category": "Database Engineering",
+    "description": "Manages enterprise relational and NoSQL database engines, ensuring high availability, WAL logging, replication, query tuning, and zero data loss.",
+    "marketDemand": 87,
+    "medianSalary": "$108,000 / ₹12-20 LPA",
+    "requiredSkills": [
+      { "skillId": "sql", "skillName": "SQL & Relational DBs", "minProficiency": 90, "weight": 2.0 },
+      { "skillId": "database_admin", "skillName": "Database Administration & Tuning", "minProficiency": 85, "weight": 1.8 },
+      { "skillId": "hash_tables", "skillName": "Hash Tables & Sets", "minProficiency": 75, "weight": 1.2 }
+    ],
+    "preferredSkills": [
+      { "skillId": "python", "skillName": "Python", "minProficiency": 70, "weight": 1.0 },
+      { "skillId": "devops_cloud", "skillName": "DevOps, Containers & Cloud", "minProficiency": 65, "weight": 0.9 },
+      { "skillId": "data_pipelines", "skillName": "Data Pipelines & Spark", "minProficiency": 60, "weight": 0.8 }
+    ],
+    "skillWeights": {
+      "sql": 2.0,
+      "database_admin": 1.8,
+      "hash_tables": 1.2,
+      "python": 1.0,
+      "devops_cloud": 0.9,
+      "data_pipelines": 0.8
+    },
+    "prerequisiteSkills": ["sql", "database_admin"],
+    "relevantConcepts": ["Query Plan Cost Optimization", "B-Tree Indexing", "Database Replication", "WAL & Recovery"],
+    "recommendedLearningAreas": ["PostgreSQL/MySQL Tuning", "High Availability Clusters", "Storage Engine Internals"]
+  }
+]

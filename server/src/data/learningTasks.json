@@ -1,0 +1,112 @@
+[
+  {
+    "id": "task_two_pointers",
+    "title": "Master Two-Pointer & Sliding Window Paradigms",
+    "skillId": "arrays_strings",
+    "skillName": "Arrays & Strings",
+    "timeHours": 6,
+    "impact": 35,
+    "difficulty": "Intermediate",
+    "category": "Core DSA Drill",
+    "description": "Comprehensive practice on 8 classical two-pointer problems to internalize sub-array traversal and window contraction."
+  },
+  {
+    "id": "task_sql_window",
+    "title": "SQL Analytical & Window Functions Deep Dive",
+    "skillId": "sql",
+    "skillName": "SQL & Relational DBs",
+    "timeHours": 8,
+    "impact": 50,
+    "difficulty": "Intermediate",
+    "category": "Data Engineering",
+    "description": "Practice dense ranking, running sums, lead/lag temporal queries, and partition clauses."
+  },
+  {
+    "id": "task_hash_indexing",
+    "title": "Hash Map Architecture & Frequency Counter Drills",
+    "skillId": "hash_tables",
+    "skillName": "Hash Tables & Sets",
+    "timeHours": 4,
+    "impact": 28,
+    "difficulty": "Beginner",
+    "category": "Core DSA Drill",
+    "description": "Replace brute-force O(N^2) searches with constant-time hash tables and custom frequency maps."
+  },
+  {
+    "id": "task_graph_traversal",
+    "title": "Graph BFS/DFS & Cycle Detection Mastery",
+    "skillId": "trees_graphs",
+    "skillName": "Trees & Graphs",
+    "timeHours": 10,
+    "impact": 65,
+    "difficulty": "Advanced",
+    "category": "Core DSA Drill",
+    "description": "Implement level-order BFS, DFS connectivity, Kahn's topological sort, and cycle detection."
+  },
+  {
+    "id": "task_dp_knapsack",
+    "title": "Dynamic Programming: Knapsack & Subsequence Archetypes",
+    "skillId": "dynamic_programming",
+    "skillName": "Dynamic Programming",
+    "timeHours": 12,
+    "impact": 75,
+    "difficulty": "Advanced",
+    "category": "Core DSA Drill",
+    "description": "State transition equation formulation, memoization tables, and bottom-up space optimization."
+  },
+  {
+    "id": "task_stat_inference",
+    "title": "Statistical Hypothesis Testing & Bayesian Inference",
+    "skillId": "statistics_prob",
+    "skillName": "Statistics & Probability",
+    "timeHours": 10,
+    "impact": 60,
+    "difficulty": "Intermediate",
+    "category": "Data Science",
+    "description": "A/B testing math, p-values, Central Limit Theorem, and Bayes rule simulations."
+  },
+  {
+    "id": "task_ml_scikit",
+    "title": "Scikit-Learn Machine Learning Pipeline Lab",
+    "skillId": "machine_learning",
+    "skillName": "Machine Learning",
+    "timeHours": 14,
+    "impact": 80,
+    "difficulty": "Advanced",
+    "category": "Data Science",
+    "description": "Build end-to-end classification and regression pipelines with cross-validation and feature scaling."
+  },
+  {
+    "id": "task_spark_etl",
+    "title": "PySpark Distributed DataFrame Processing",
+    "skillId": "data_pipelines",
+    "skillName": "Data Pipelines & Spark",
+    "timeHours": 12,
+    "impact": 70,
+    "difficulty": "Advanced",
+    "category": "Data Engineering",
+    "description": "Distributed data transformations, lazy evaluation, shuffling, and fault-tolerant DAG processing."
+  },
+  {
+    "id": "task_stack_queue_drills",
+    "title": "Monotonic Stacks & Priority Queues",
+    "skillId": "stacks_queues",
+    "skillName": "Stacks & Queues",
+    "timeHours": 5,
+    "impact": 32,
+    "difficulty": "Intermediate",
+    "category": "Core DSA Drill",
+    "description": "Solve Next Greater Element, Daily Temperatures, and binary heap operations."
+  },
+  {
+    "id": "task_python_idioms",
+    "title": "Idiomatic Python & Complexity Profiling",
+    "skillId": "python",
+    "skillName": "Python",
+    "timeHours": 4,
+    "impact": 22,
+    "difficulty": "Beginner",
+    "category": "Language",
+    "description": "List comprehensions, generator memory optimizations, and time complexity profiling with cProfile."
+  }
+]
